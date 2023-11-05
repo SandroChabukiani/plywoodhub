@@ -1,0 +1,139 @@
+.logo{
+  width: 150px;
+  height: 80px;
+}
+.menu{
+  padding-top: 7px;
+}
+.manamde{
+  padding-bottom: 50px;
+}
+.active {
+    background-color: #f0f2f6;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    color: rgb(11, 0, 0);
+    /* position: sticky; */
+    top: 0;
+  }
+  
+  nav .title {
+    font-size: 1.9rem;
+    margin: 1rem;
+    margin-left: 5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(13, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  .navi {
+    display: block;
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    padding: 0.5rem;
+    transition: 0.5s;
+    margin: 0 0.5rem;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+    font-weight: 900;
+  }
+  .shoppingcarticon {
+    margin-top: 10px;
+    color: black;
+    margin-right: 4.5rem;
+  }
+  
+  .tt {
+    margin-right: 0.5rem;
+  }
+  nav ul li a:not(.active):hover {
+    background-color: #eff1f4;
+  }
+  
+  nav .menu {
+    margin-top: 0.5rem;
+    display: none;
+    position: absolute;
+    top: 0.7rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.8rem;
+    height: 1.5rem;
+  }
+  
+  nav .menu span {
+    height: 0.3rem;
+    width: 100%;
+    background-color: #030303;
+    border-radius: 0.2rem;
+  }
+  .manamde {
+    display: none;
+  }
+  
+  @media (max-width: 780px) {
+    .mere {
+      display: none;
+    }
+    .manamde {
+      display: block;
+      width: 24px;
+      margin-right: 50px;
+    }
+    nav .menu {
+      display: flex;
+    }
+    .navi {
+      margin-left: 0;
+    }
+    nav {
+      align-items: center;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+    }
+  
+    nav ul.open {
+      display: flex;
+      /* width: 90%; */
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: auto;
+      background-color: rgb(252, 252, 252);
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      margin: 0.2rem 0.5rem;
+    }
+  }
+  @media (max-width: 600px) {
+    nav .title {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+    }
+  }
